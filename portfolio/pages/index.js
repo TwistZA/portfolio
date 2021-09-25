@@ -67,33 +67,33 @@ export default function Home() {
         </div>
 
         <div className={styles.tagline}>
-          <h4>our partners</h4>
+          <h4>work specific projects</h4>
         </div>
         <div className={styles.grid2Parent}>
           <div className={styles.grid2Child}>
             <CardLogo
-              cardTitle="nestle"
-              imageLogo="./brand1.png"
-              imageCover="./photo11.jpg"
-              waveColor="#d81e36"
+              cardTitle="zor calculator"
+              imageLogo="./goldstar2.png"
+              imageCover="./recs4.jpg"
+              waveColor="#292726"
               bodyText="This website is built using React and is bootstrapped with NextJS. Styling is done using standard CSS. Card components are re-usable React functional components."
             />
           </div>
           <div className={styles.grid2Child}>
             <CardLogo
-              cardTitle="cadbury"
-              imageLogo="./brand2.png"
-              imageCover="./photo13.jpg"
-              waveColor="#482683"
+              cardTitle="memory"
+              imageLogo="./goldstar.png"
+              imageCover="./graph.jpg"
+              waveColor="#011091"
               bodyText="This is a re-usable React functional card component, custom built from zero. Customizable inputs are svg wave header and footer colors, brand logo image, card background image, card title and this text."
             />
           </div>
           <div className={styles.grid2Child}>
             <CardLogo
-              cardTitle="aero"
-              imageLogo="./brand3.png"
-              imageCover="./photo12.jpg"
-              waveColor="#6c3d26"
+              cardTitle="qr code analyser"
+              imageLogo="./new.png"
+              imageCover="./qrcode4.jpg"
+              waveColor="#63c5f2"
               bodyText="Brand logos are being used for non commercial purposes only. This is a private project for learning web development. This website is not for commercial use."
             />
           </div>
