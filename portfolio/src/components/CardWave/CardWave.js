@@ -7,6 +7,7 @@ export default function CardWave({
   waveColor,
   list,
   link,
+  github,
 }) {
   return (
     <div className={styles.card}>
@@ -35,7 +36,10 @@ export default function CardWave({
         </ul>
       </div>
       <a href={link} className={styles.myButton}>
-        view now
+        view deployed website
+      </a>
+      <a href={github} className={styles.myButton}>
+        view github repo
       </a>
 
       <div className={styles.svgImage}>

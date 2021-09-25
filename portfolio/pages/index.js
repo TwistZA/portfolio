@@ -5,10 +5,54 @@ import CardLogo from "../src/components/CardLogo/CardLogo";
 import ContactUsFooter from "./../src/components/ContactUsFooter/ContactUsFooter";
 
 export default function Home() {
-  //lessons learnt
-
+  //lessons learnt strings
   const list = {
-    icedreams: ["string1", "string2", "string3", "string4", "string5"],
+    dadjokes: [
+      "My first deployed react app",
+      "Uses web API to retrieve data and store in localstorage",
+      "Uses movable animated components ",
+      "Pre React Hooks state handling",
+      "First experience with Axios and JSON parsing",
+      "Dynamic component state management",
+    ],
+
+    recipes: [
+      "First use of Next JS",
+      "Uses 2 web APIs to populate 200+pages dynamically on server side with re-usable templates",
+      "NextJS Static generation - fetch and populate date at build time",
+      "NextJS Static generation - specify dynamic routes to pre-render pages based on data.",
+      "Modular Design with re-usable components",
+      "CSS - Mobile friendly and responsive",
+      "CSS - Modern, stylish look and feel",
+    ],
+
+    icedreams: [
+      "Focus on modern front end styling concepts with pure CSS",
+      "Mobile friendly layout",
+      "Responsive web design",
+      "React functional card components",
+      "Refactoring cards for re-use",
+      "Introduction to SVG waves, overlays and SVG gotchas",
+      "CSS positioning: relative, absolute",
+      "CSS negative margins",
+      "CSS Neomorphism box shadows",
+      "Cross browser testing",
+      "This portfolio website re-uses and enhances components created in Ice Dreams",
+    ],
+
+    cocktails: [
+      "Responsive web design",
+      "Mobile friendly layout",
+      "React functional components",
+      "Components designed for re-use",
+      "Social Media Integration",
+      "Using fetch for getting JSON from API",
+      "All data is fetched async from API: www.thecocktaildb.com",
+      "Using template literals for parsing dynamic json properties",
+      "React hooks for managing state",
+      "CSS Neomorphism box shadows",
+      "CSS display:grid layout design pattern",
+    ],
   };
 
   return (
@@ -38,7 +82,7 @@ export default function Home() {
           <div>web developer portfolio</div>
         </div>
         <div className={styles.tagline}>
-          <div>web applications developed</div>
+          <div>web applications deployed</div>
         </div>
 
         <div className={styles.gridParent}>
@@ -47,8 +91,9 @@ export default function Home() {
               cardTitle="Dad Jokes"
               imageSrc="./joke.png"
               waveColor="#ffee00"
-              list={list.icedreams}
+              list={list.dadjokes}
               link="https://dad-jokes3333.herokuapp.com/"
+              github="https://github.com/TwistZA/dad-jokes3333"
             />
           </div>
           <div className={styles.gridChild}>
@@ -56,7 +101,9 @@ export default function Home() {
               cardTitle="recipes"
               imageSrc="./recipe.png"
               waveColor="#96530b"
-              list={list.icedreams}
+              list={list.recipes}
+              link="https://gold-medal-meals.vercel.app/"
+              github="https://github.com/TwistZA/gold-medal-meals"
             />
           </div>
           <div className={styles.gridChild}>
@@ -65,6 +112,8 @@ export default function Home() {
               imageSrc="./product3.png"
               waveColor="#5000ca"
               list={list.icedreams}
+              link="https://ice-dreams.vercel.app/"
+              github="https://github.com/TwistZA/ice-dreams"
             />
           </div>
           <div className={styles.gridChild}>
@@ -72,7 +121,9 @@ export default function Home() {
               cardTitle="cocktails"
               imageSrc="./cocktail.png"
               waveColor="#ff7700"
-              list={list.icedreams}
+              list={list.cocktails}
+              link="https://cocktail-recipes-chi.vercel.app/"
+              github="https://github.com/TwistZA/cocktail-recipes"
             />
           </div>
         </div>
