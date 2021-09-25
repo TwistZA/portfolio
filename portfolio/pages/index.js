@@ -25,11 +25,11 @@ export default function Home() {
 
       <div className={styles.mainContent}>
         <div className={styles.logoHeader}>
-          <img src="logo.png" alt="logo"></img>
-          <div>ICE DREAMS</div>
+          <img src="me.jpg" alt="me"></img>
+          <div>AVINASH GANGA</div>
         </div>
         <div className={styles.tagline}>
-          <div>gourmet ice cream</div>
+          <div>web developer portfolio</div>
         </div>
 
         <div className={styles.gridParent}>
