@@ -201,7 +201,7 @@ export default function Home() {
           exercitation pariatur quis deserunt commodo cillum qui tempor deserunt
           est officia esse.
         </p>
-        <p>🍦🍦🍦 Worst logo ever 🍦🍦🍦</p>
+        <p>🏆🏆🏆 Last Updated Septemeber 2021 🏆🏆🏆</p>
       </div>
       <div className={styles.footer}>
         <div className={styles.wave}>
