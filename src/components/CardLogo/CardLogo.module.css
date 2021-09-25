@@ -6,8 +6,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* background: linear-gradient(225deg, #e6e6e6, #ffffff); */
-    /* background:url("/photo13.jpg"); */
     background-size: cover;
     background-color: rgba(255,255,255,0.7);
     box-shadow:  -5px 5px 10px #0f0f0f,
@@ -43,10 +41,9 @@
   }
   
   .mainText{
-    font-size: 18px;
-    text-align:center;
+    font-size: 15px;
+    text-align:left;
     padding: 5px 5px;
-    letter-spacing: 1px;
   }
   
 .coverImage{
@@ -67,9 +64,6 @@
     position: relative;
     top:-150px;
     right:-125px; 
-
-    /* border: 1px blue solid; */
-    
    } 
   
   

@@ -53,6 +53,15 @@ export default function Home() {
       "CSS Neomorphism box shadows",
       "CSS display:grid layout design pattern",
     ],
+
+    zorcalc:
+      "Created in 80 hours during ZOR project. It allows the user to upload recs_config, weights, recommendation, viewing history STB files, and then accurately calculate the recommendations for that particular time.This one click solution allowed all members of the team to quickly compare results found in the STB with this application which saved much time and enhanced the quality of the product",
+
+    memory:
+      "This is a proof of concept application to show STB memory usage over time, by allowing user to upload log file which then gets automatically parsed and displays a graph of memory usage over time",
+
+    qrcode:
+      "Created in 4 hours to assist with SI triage of qrcode related defects. Shows success or error if qrcode string length is invalid. Parses the string and shows corresponding values.",
   };
 
   return (
@@ -134,20 +143,20 @@ export default function Home() {
         <div className={styles.grid2Parent}>
           <div className={styles.grid2Child}>
             <CardLogo
-              cardTitle="zor calculator"
+              cardTitle="zor calc"
               imageLogo="./goldstar2.png"
               imageCover="./recs4.jpg"
-              waveColor="#292726"
-              bodyText="This website is built using React and is bootstrapped with NextJS. Styling is done using standard CSS. Card components are re-usable React functional components."
+              waveColor="#50e632"
+              bodyText={list.zorcalc}
             />
           </div>
           <div className={styles.grid2Child}>
             <CardLogo
-              cardTitle="memory"
+              cardTitle="memory analyser"
               imageLogo="./goldstar.png"
               imageCover="./graph.jpg"
               waveColor="#011091"
-              bodyText="This is a re-usable React functional card component, custom built from zero. Customizable inputs are svg wave header and footer colors, brand logo image, card background image, card title and this text."
+              bodyText={list.memory}
             />
           </div>
           <div className={styles.grid2Child}>
@@ -156,7 +165,7 @@ export default function Home() {
               imageLogo="./new.png"
               imageCover="./qrcode4.jpg"
               waveColor="#63c5f2"
-              bodyText="Brand logos are being used for non commercial purposes only. This is a private project for learning web development. This website is not for commercial use."
+              bodyText={list.qrcode}
             />
           </div>
         </div>
