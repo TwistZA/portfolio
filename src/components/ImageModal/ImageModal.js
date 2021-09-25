@@ -1,10 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import { useState, useEffect } from "react";
-// const images = [
-//   "https://images.dog.ceo/breeds/pomeranian/n02112018_5091.jpg",
-//   "https://images.dog.ceo/breeds/mountain-swiss/n02107574_753.jpg",
-//   "https://images.dog.ceo/breeds/leonberg/n02111129_3028.jpg",
-// ];
 
 export default function ImageModal({ images }) {
   const [index, setIndex] = useState(0);
@@ -28,7 +23,23 @@ export default function ImageModal({ images }) {
   }, []);
   return (
     <div className="App">
-      <button onClick={() => setDisplayModal(true)}>open modal</button>
+      {!displayModal ? (
+        <button onClick={() => setDisplayModal(true)}>open modal</button>
+      ) : (
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            flexDirection: "column",
+            color: "#5000ca",
+            fontWeight: "bold",
+          }}
+        >
+          <div>click left right to view all images</div>
+          <div>click anywhere to close image</div>
+        </div>
+      )}
+
       {displayModal && (
         <div
           style={{
@@ -37,7 +48,7 @@ export default function ImageModal({ images }) {
           }}
         >
           <button onClick={prev}>&lt;</button>
-          <img src={images[index]} alt="" style={{ width: 320 }} />
+          <img src={images[index]} alt="" style={{ width: 360 }} />
           <button onClick={next}>&gt;</button>
         </div>
       )}
