@@ -31,34 +31,37 @@ export default function Home() {
         <div className={styles.tagline}>
           <div>web developer portfolio</div>
         </div>
+        <div className={styles.tagline}>
+          <div>web applications developed</div>
+        </div>
 
         <div className={styles.gridParent}>
           <div className={styles.gridChild}>
             <CardWave
-              cardTitle="swirls"
-              imageSrc="./product2.png"
-              waveColor="#5000ca"
+              cardTitle="Dad Jokes"
+              imageSrc="./joke.png"
+              waveColor="#ffee00"
             />
           </div>
           <div className={styles.gridChild}>
             <CardWave
-              cardTitle="sundaes"
+              cardTitle="recipes"
+              imageSrc="./recipe.png"
+              waveColor="#96530b"
+            />
+          </div>
+          <div className={styles.gridChild}>
+            <CardWave
+              cardTitle="ice dreams"
               imageSrc="./product3.png"
               waveColor="#5000ca"
             />
           </div>
           <div className={styles.gridChild}>
             <CardWave
-              cardTitle="waffles"
-              imageSrc="./product4.png"
-              waveColor="#5000ca"
-            />
-          </div>
-          <div className={styles.gridChild}>
-            <CardWave
-              cardTitle="soft serve"
-              imageSrc="./product1.png"
-              waveColor="#5000ca"
+              cardTitle="cocktails"
+              imageSrc="./cocktail.png"
+              waveColor="#ff7700"
             />
           </div>
         </div>
