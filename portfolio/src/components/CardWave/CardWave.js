@@ -1,7 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 import styles from "./CardWave.module.css";
 
-export default function CardWave({ cardTitle, imageSrc, waveColor }) {
+export default function CardWave({
+  cardTitle,
+  imageSrc,
+  waveColor,
+  list,
+  link,
+}) {
   return (
     <div className={styles.card}>
       <div className={styles.svgImage}>
@@ -20,6 +26,17 @@ export default function CardWave({ cardTitle, imageSrc, waveColor }) {
       <img src={imageSrc} alt="logo"></img>
 
       <div className={styles.caption}>{cardTitle}</div>
+      <div className={styles.list}>
+        <ul>
+          {list &&
+            list.map((item) => {
+              return <li key={item}>{item}</li>;
+            })}
+        </ul>
+      </div>
+      <a href={link} className={styles.myButton}>
+        view now
+      </a>
 
       <div className={styles.svgImage}>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">

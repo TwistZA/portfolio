@@ -5,6 +5,12 @@ import CardLogo from "../src/components/CardLogo/CardLogo";
 import ContactUsFooter from "./../src/components/ContactUsFooter/ContactUsFooter";
 
 export default function Home() {
+  //lessons learnt
+
+  const list = {
+    icedreams: ["string1", "string2", "string3", "string4", "string5"],
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.hero}>
@@ -41,6 +47,8 @@ export default function Home() {
               cardTitle="Dad Jokes"
               imageSrc="./joke.png"
               waveColor="#ffee00"
+              list={list.icedreams}
+              link="https://dad-jokes3333.herokuapp.com/"
             />
           </div>
           <div className={styles.gridChild}>
@@ -48,6 +56,7 @@ export default function Home() {
               cardTitle="recipes"
               imageSrc="./recipe.png"
               waveColor="#96530b"
+              list={list.icedreams}
             />
           </div>
           <div className={styles.gridChild}>
@@ -55,6 +64,7 @@ export default function Home() {
               cardTitle="ice dreams"
               imageSrc="./product3.png"
               waveColor="#5000ca"
+              list={list.icedreams}
             />
           </div>
           <div className={styles.gridChild}>
@@ -62,6 +72,7 @@ export default function Home() {
               cardTitle="cocktails"
               imageSrc="./cocktail.png"
               waveColor="#ff7700"
+              list={list.icedreams}
             />
           </div>
         </div>
