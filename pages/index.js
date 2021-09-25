@@ -119,7 +119,7 @@ export default function Home() {
           <div className={styles.gridChild}>
             <CardWave
               cardTitle="cocktails"
-              imageSrc="./cocktail.png"
+              imageSrc="./Cocktail.png"
               waveColor="#ff7700"
               list={list.cocktails}
               link="https://cocktail-recipes-chi.vercel.app/"
