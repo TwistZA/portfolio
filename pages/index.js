@@ -3,6 +3,7 @@ import CardWave from "../src/components/CardWave/CardWave";
 import styles from "../styles/Home.module.css";
 import CardLogo from "../src/components/CardLogo/CardLogo";
 import ContactUsFooter from "./../src/components/ContactUsFooter/ContactUsFooter";
+import ImageModal from "../src/components/ImageModal/ImageModal";
 
 export default function Home() {
   //lessons learnt strings
@@ -64,6 +65,10 @@ export default function Home() {
       "Created in 4 hours to assist with SI triage of qrcode related defects. Shows success or error if qrcode string length is invalid. Parses the string and shows corresponding values.",
   };
 
+  //image modal arrays
+
+  const coursesImages = ["photo1.jpg", "photo2.jpg", "photo3.jpg"];
+
   return (
     <div className={styles.container}>
       <div className={styles.hero}>
@@ -90,6 +95,28 @@ export default function Home() {
         <div className={styles.tagline}>
           <div>web developer portfolio</div>
         </div>
+
+        <div className={styles.lessonLearned}>
+          <div className={styles.listImage}>
+            <img src="/lessons.png" alt="logo"></img>
+          </div>
+
+          <div className={styles.listItems}>
+            <h4>courses completed and key skills acquired</h4>
+            <ul>
+              <li>Responsive web design</li>
+              <li>Mobile friendly layout</li>
+              <li>React functional card components</li>
+              <li>Refactoring cards for re-use</li>
+              <li>Introduction to SVG waves, overlays and SVG gotchas</li>
+              <li>CSS positioning: relative, absolute</li>
+              <li>CSS negative margins</li>
+              <li>CSS Neomorphism box shadows</li>
+              <li>Cross browser testing</li>
+            </ul>
+          </div>
+        </div>
+
         <div className={styles.tagline}>
           <div>web applications deployed</div>
         </div>
@@ -173,26 +200,7 @@ export default function Home() {
           <h4>about us</h4>
         </div>
 
-        <div className={styles.lessonLearned}>
-          <div className={styles.listImage}>
-            <img src="/lessons.png" alt="logo"></img>
-          </div>
-
-          <div className={styles.listItems}>
-            <h4>Concepts learned and demonstrated</h4>
-            <ul>
-              <li>Responsive web design</li>
-              <li>Mobile friendly layout</li>
-              <li>React functional card components</li>
-              <li>Refactoring cards for re-use</li>
-              <li>Introduction to SVG waves, overlays and SVG gotchas</li>
-              <li>CSS positioning: relative, absolute</li>
-              <li>CSS negative margins</li>
-              <li>CSS Neomorphism box shadows</li>
-              <li>Cross browser testing</li>
-            </ul>
-          </div>
-        </div>
+        <ImageModal images={coursesImages} />
 
         <div className={styles.tagline}>
           <h4>contact us</h4>

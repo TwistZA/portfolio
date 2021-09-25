@@ -64,6 +64,7 @@
      font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
      text-decoration: none;
      vertical-align: middle;
+     margin-bottom: 15px;
      }
   .myButton:hover {
      border-top-color: #1f2b1b;
