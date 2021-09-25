@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import styles from "./CardLogo.module.css";
 
 export default function CardLogo({
@@ -9,17 +10,17 @@ export default function CardLogo({
 }) {
   return (
     <div className={styles.card}>
-      <img className={styles.coverImage} src={imageCover}></img>
+      <img className={styles.coverImage} src={imageCover} alt="logo"></img>
       <div className={styles.svgImage}>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
             fill={waveColor}
-            fill-opacity="0.9"
+            fillOpacity="0.9"
             d="M0,128L720,288L1440,320L1440,0L720,0L0,0Z"
           ></path>
         </svg>
       </div>
-      <img className={styles.logoImage} src={imageLogo}></img>
+      <img className={styles.logoImage} src={imageLogo} alt="logo"></img>
 
       <div className={styles.body}>
         <div className={styles.title}>{cardTitle}</div>
@@ -30,7 +31,7 @@ export default function CardLogo({
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
             fill={waveColor}
-            fill-opacity="0.9"
+            fillOpacity="0.9"
             d="M0,128L720,288L1440,320L1440,320L720,320L0,320Z"
           ></path>
         </svg>

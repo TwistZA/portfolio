@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import CardWave from "../src/components/CardWave/CardWave";
 import styles from "../styles/Home.module.css";
 import CardLogo from "../src/components/CardLogo/CardLogo";
@@ -24,7 +25,7 @@ export default function Home() {
 
       <div className={styles.mainContent}>
         <div className={styles.logoHeader}>
-          <img src="logo.png"></img>
+          <img src="logo.png" alt="logo"></img>
           <div>ICE DREAMS</div>
         </div>
         <div className={styles.tagline}>
@@ -100,7 +101,7 @@ export default function Home() {
 
         <div className={styles.lessonLearned}>
           <div className={styles.listImage}>
-            <img src="/lessons.png"></img>
+            <img src="/lessons.png" alt="logo"></img>
           </div>
 
           <div className={styles.listItems}>

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import styles from "./CardWave.module.css";
 
 export default function CardWave({ cardTitle, imageSrc, waveColor }) {
@@ -16,7 +17,7 @@ export default function CardWave({ cardTitle, imageSrc, waveColor }) {
           ></path>
         </svg>
       </div>
-      <img src={imageSrc}></img>
+      <img src={imageSrc} alt="logo"></img>
 
       <div className={styles.caption}>{cardTitle}</div>
 
