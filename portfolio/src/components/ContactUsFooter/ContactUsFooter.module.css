@@ -1,0 +1,24 @@
+.container{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+padding:0px 10px;
+width: 70%;
+text-align: center;
+border-radius: 5px;
+background: linear-gradient(225deg, #e6e6e6, #ffffff);
+box-shadow:  -5px 5px 10px #0f0f0f,
+             5px -5px 10px #ffffff;
+
+}
+
+.icon img{
+    height:50px;
+    margin: 10px;
+
+}
+
+.icon:hover{
+    cursor: pointer;
+}
