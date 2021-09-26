@@ -63,6 +63,7 @@
   font-size: 25px;
   letter-spacing: 4px;
   margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .heading{
@@ -114,7 +115,6 @@
 }
 
 .grid2Parent{
-  
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -125,6 +125,9 @@
 
 .grid2Child{
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
   flex: 0 1 360px;
 }
 
@@ -140,7 +143,7 @@
   letter-spacing: 1px;
   margin-left: 25px;
   margin-right: 25px;
-  margin-bottom: 50px;
+  margin-bottom: 5px;
   border-radius: 10px;
   background: linear-gradient(225deg, #e6e6e6, #ffffff);
   box-shadow:  -5px 5px 10px #0f0f0f,

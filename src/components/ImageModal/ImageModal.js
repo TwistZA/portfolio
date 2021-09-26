@@ -2,30 +2,41 @@
 import { useState, useEffect } from "react";
 import styles from "./ImageModal.module.css";
 
-export default function ImageModal({ images }) {
+export default function ImageModal({ images, title }) {
   const [index, setIndex] = useState(0);
   const [displayModal, setDisplayModal] = useState(false);
+
   const next = () => {
     setIndex((i) => (i + 1) % images.length);
   };
+
   const prev = () => {
     setIndex(
       (i) => (((i - 1) % images.length) + images.length) % images.length
     );
   };
+
   const onClickOutside = (e) => {
     if (e.target.localName !== "button") {
       setDisplayModal(false);
     }
   };
+
+  const handleClick = () => {
+    setDisplayModal(true);
+  };
+
   useEffect(() => {
     window.addEventListener("click", onClickOutside);
     return () => window.removeEventListener("click", onClickOutside);
   }, []);
+
   return (
     <div className="App">
       {!displayModal ? (
-        <button onClick={() => setDisplayModal(true)}>open modal</button>
+        <button className={styles.myButton} onClick={() => handleClick()}>
+          show {title}
+        </button>
       ) : (
         <div
           style={{
@@ -49,6 +60,11 @@ export default function ImageModal({ images }) {
             display: "flex",
             flexDirection: "row",
             justifyContent: "center",
+            position: "relative",
+            left: "50%",
+            top: "50%",
+            transform: "translate(-50%, -100%)",
+            zIndex: "10",
           }}
         >
           <button
@@ -69,7 +85,10 @@ export default function ImageModal({ images }) {
             src={images[index]}
             alt=""
             style={{
-              width: "70%",
+              width: "80vw",
+              border: "5px groove black",
+              boxShadow:
+                "  -5px 5px 10px #0f0f0f,              5px -5px 10px #ffffff",
             }}
           />
           <button

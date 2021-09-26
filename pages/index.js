@@ -18,7 +18,7 @@ export default function Home() {
     ],
 
     recipes: [
-      "First use of Next JS",
+      "First use of Next JS in a React project",
       "Uses 2 web APIs to populate 200+pages dynamically on server side with re-usable templates",
       "NextJS Static generation - fetch and populate date at build time",
       "NextJS Static generation - specify dynamic routes to pre-render pages based on data.",
@@ -66,8 +66,19 @@ export default function Home() {
   };
 
   //image modal arrays
-
-  const coursesImages = ["photo1.jpg", "photo2.jpg", "photo3.jpg"];
+  const imageList = {
+    coursesImages: ["screens/cert1.png", "screens/cert2.png"],
+    zorImages: [
+      "screens/zor1.png",
+      "screens/zor2.png",
+      "screens/zor3.png",
+      "screens/zor4.png",
+      "screens/zor5.png",
+      "screens/zor6.png",
+    ],
+    memImages: ["screens/mem1.png", "screens/mem2.png"],
+    qrImages: ["screens/qr1.png", "screens/qr2.png", "screens/qr3.png"],
+  };
 
   return (
     <div className={styles.container}>
@@ -116,9 +127,10 @@ export default function Home() {
             </ul>
           </div>
         </div>
+        <ImageModal images={imageList.coursesImages} title="certifications" />
 
         <div className={styles.tagline}>
-          <div>web applications deployed</div>
+          <div>web applications developed and deployed</div>
         </div>
 
         <div className={styles.gridParent}>
@@ -176,7 +188,12 @@ export default function Home() {
               waveColor="#50e632"
               bodyText={list.zorcalc}
             />
+            <ImageModal
+              images={imageList.zorImages}
+              title="sample zor output"
+            />
           </div>
+
           <div className={styles.grid2Child}>
             <CardLogo
               cardTitle="memory analyser"
@@ -185,7 +202,12 @@ export default function Home() {
               waveColor="#011091"
               bodyText={list.memory}
             />
+            <ImageModal
+              images={imageList.memImages}
+              title="sample memory output"
+            />
           </div>
+
           <div className={styles.grid2Child}>
             <CardLogo
               cardTitle="qr code analyser"
@@ -194,13 +216,15 @@ export default function Home() {
               waveColor="#63c5f2"
               bodyText={list.qrcode}
             />
+            <ImageModal
+              images={imageList.qrImages}
+              title="sample qrcode output"
+            />
           </div>
         </div>
         <div className={styles.tagline}>
           <h4>about us</h4>
         </div>
-
-        <ImageModal images={coursesImages} />
 
         <div className={styles.tagline}>
           <h4>contact us</h4>

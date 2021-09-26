@@ -1,3 +1,40 @@
 .modalButton:hover{
     cursor: pointer;
 }
+
+.myButton {
+    border-top: 1px solid #ffffff;
+    background: #7e857d;
+    background: -webkit-gradient(linear, left top, left bottom, from(#071b2b), to(#7e857d));
+    background: -webkit-linear-gradient(top, #071b2b, #7e857d);
+    background: -moz-linear-gradient(top, #071b2b, #7e857d);
+    background: -ms-linear-gradient(top, #071b2b, #7e857d);
+    background: -o-linear-gradient(top, #071b2b, #7e857d);
+    padding: 2.5px 5px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    box-shadow: rgba(0,0,0,1) 0 1px 0;
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    color: #fcfcf7;
+    font-size: 16px;
+    font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+    text-decoration: none;
+    vertical-align: middle;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    }
+
+ .myButton:hover {
+    border-top-color: #1f2b1b;
+    background: #1f2b1b;
+    color: #ffffff;
+    cursor: pointer;
+    }
+
+ .myButton:active {
+    border-top-color: #ffffff;
+    background: #ffffff;
+    }
