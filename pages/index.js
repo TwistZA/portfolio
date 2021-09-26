@@ -22,7 +22,7 @@ export default function Home() {
       "First use of Next JS in a React project",
       "Uses 2 web APIs to populate 200+pages dynamically on server side with re-usable templates",
       "NextJS Static generation - fetch and populate date at build time",
-      "NextJS Static generation - specify dynamic routes to pre-render pages based on data.",
+      "NextJS Static generation - specify dynamic routes to pre-render pages based on data",
       "Modular Design with re-usable components",
       "CSS - Mobile friendly and responsive",
       "CSS - Modern, stylish look and feel",
@@ -101,7 +101,7 @@ export default function Home() {
 
       <div className={styles.mainContent}>
         <div className={styles.logoHeader}>
-          <img src="me.jpg" alt="me"></img>
+          <img src="me2.jpg" alt="Avinash"></img>
           <div>AVINASH GANGA</div>
         </div>
         <div className={styles.tagline}>
@@ -126,7 +126,7 @@ export default function Home() {
                 2021
               </li>
               <li>
-                <b>Key comptency</b>: MERN Stack (Mongo, Express, React, Node )
+                <b>Key competency</b>: MERN Stack (Mongo, Express, React, Node )
               </li>
               <li>
                 <b>Skills acquired</b>: HTML5, CSS3, Javascript (Modern syntax
@@ -141,8 +141,8 @@ export default function Home() {
               <li>Bootstrap, Material UI</li>
               <li>React Hooks, Context</li>
               <li>
-                <b>8 Projects</b> developed and deployed in 2021 including
-                private and work, details below
+                <b>8 Projects</b> including this portfolio developed and
+                deployed in 2021 including private and work, details below
               </li>
             </ul>
           </div>
@@ -249,7 +249,7 @@ export default function Home() {
 
       <div className={styles.footerBlock}>
         <h3>2021 Web Dev Project, by Avinash Ganga</h3>
-        <p>🏆🏆🏆 Last Updated Septemeber 2021 🏆🏆🏆</p>
+        <p>Last Updated Septemeber 2021</p>
       </div>
       <div className={styles.footer}>
         <div className={styles.wave}>
