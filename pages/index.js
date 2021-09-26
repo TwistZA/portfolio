@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.css";
 import CardLogo from "../src/components/CardLogo/CardLogo";
 import ContactUsFooter from "./../src/components/ContactUsFooter/ContactUsFooter";
 import ImageModal from "../src/components/ImageModal/ImageModal";
+import SocialMediaShare from "../src/components/SocialMediaShare/SocialMediaShare";
 
 export default function Home() {
   //lessons learnt strings
@@ -115,15 +116,34 @@ export default function Home() {
           <div className={styles.listItems}>
             <h4>courses completed and key skills acquired</h4>
             <ul>
-              <li>Responsive web design</li>
-              <li>Mobile friendly layout</li>
-              <li>React functional card components</li>
-              <li>Refactoring cards for re-use</li>
-              <li>Introduction to SVG waves, overlays and SVG gotchas</li>
-              <li>CSS positioning: relative, absolute</li>
-              <li>CSS negative margins</li>
-              <li>CSS Neomorphism box shadows</li>
-              <li>Cross browser testing</li>
+              <li>
+                <b>Udemy Certification - Web Development Bootcamp</b>, 47 hour
+                course, Jun 2018 to Nov 2019
+              </li>
+              <li>
+                <b>Udemy Certification - Modern React Bootcamp</b>
+                (Hooks,Context,NextJS,Router), 39 hour course, Dec 2019 to Jan
+                2021
+              </li>
+              <li>
+                <b>Key comptency</b>: MERN Stack (Mongo, Express, React, Node )
+              </li>
+              <li>
+                <b>Skills acquired</b>: HTML5, CSS3, Javascript (Modern syntax
+                ES6, ES7)
+              </li>
+              <li>Flexbox, grid, responsive design</li>
+              <li>Modern CSS - SVG, Neomorphism, Glassmorphism</li>
+              <li>
+                Asynchronous JavaScript - Promises, async/await, REST, CRUD, Web
+                API
+              </li>
+              <li>Bootstrap, Material UI</li>
+              <li>React Hooks, Context</li>
+              <li>
+                <b>8 Projects</b> developed and deployed in 2021 including
+                private and work, details below
+              </li>
             </ul>
           </div>
         </div>
@@ -222,26 +242,13 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className={styles.tagline}>
-          <h4>about us</h4>
-        </div>
-
-        <div className={styles.tagline}>
-          <h4>contact us</h4>
-        </div>
       </div>
 
-      <ContactUsFooter />
+      <h1>Share</h1>
+      <SocialMediaShare />
 
       <div className={styles.footerBlock}>
-        <h3>2021 Web Dev Project Concept only, by AG</h3>
-        <p>This website is project for demo and self studies only!!!!</p>
-        <p>
-          Laborum cupidatat voluptate eu esse ad proident veniam anim voluptate.
-          Excepteur eu voluptate amet in deserunt aute cillum. Ad Lorem
-          exercitation pariatur quis deserunt commodo cillum qui tempor deserunt
-          est officia esse.
-        </p>
+        <h3>2021 Web Dev Project, by Avinash Ganga</h3>
         <p>🏆🏆🏆 Last Updated Septemeber 2021 🏆🏆🏆</p>
       </div>
       <div className={styles.footer}>
