@@ -56,6 +56,23 @@ export default function Home() {
       "CSS display:grid layout design pattern",
     ],
 
+    trivia: [
+      "First full interactive MERN stack project",
+      "Express backend web server",
+      "Developed backend API to GET/POST from MongoDB Atlas",
+      "React front end used for interactive triva game",
+      "Fetching random questions from free API",
+      "Using MongoDB Atlas to store every user score",
+      "Developed a progressbar and customizable snackbar",
+      "Summary page scrolls to users score in overall list",
+      "React Router for swicthing between launcher, header, game, summary pages",
+      "Responsive web design",
+      "Mobile friendly layout",
+      "Components designed for re-use",
+      "Axios for GET/POST to API",
+      "React hooks for managing state",
+    ],
+
     zorcalc:
       "Created in 80 hours during ZOR project. It allows the user to upload recs_config, weights, recommendation, viewing history STB files, and then accurately calculate the recommendations for that particular time.This one click solution allowed all members of the team to quickly compare results found in the STB with this application which saved much time and enhanced the quality of the product",
 
@@ -101,7 +118,7 @@ export default function Home() {
 
       <div className={styles.mainContent}>
         <div className={styles.logoHeader}>
-          <img src="me2.jpg" alt="Avinash"></img>
+          <img src="me3.jpg" alt="Avinash"></img>
           <div>AVINASH GANGA</div>
         </div>
         <div className={styles.tagline}>
@@ -194,6 +211,16 @@ export default function Home() {
               github="https://github.com/TwistZA/cocktail-recipes"
             />
           </div>
+          <div className={styles.gridChild}>
+            <CardWave
+              cardTitle="trivia game"
+              imageSrc="./quiz.png"
+              waveColor="#d10606"
+              list={list.trivia}
+              link="https://trivia-royale.herokuapp.com/"
+              github="https://github.com/TwistZA/trivia-game"
+            />
+          </div>
         </div>
 
         <div className={styles.tagline}>
@@ -249,7 +276,7 @@ export default function Home() {
 
       <div className={styles.footerBlock}>
         <h3>2021 Web Dev Project, by Avinash Ganga</h3>
-        <p>Last Updated Septemeber 2021</p>
+        <p>Last Updated November 2021</p>
       </div>
       <div className={styles.footer}>
         <div className={styles.wave}>
